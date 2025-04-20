@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creation d'un examen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="add-questions.html">Ajouter Question</a>
+        <a href="exams.html">Voir Examens</a>
+    </nav>
+    
+    <h1>Crée un examen</h1>
+    <form id="form-exam">
+        
+        <input type="text" id="exam-nom" placeholder="Nom de l'examen" required>
+        <input type="number" name="duree" id="duree" placeholder="Durée de l'examen" required>
+        <textarea id="description" placeholder="description"></textarea>
+        <input type="text" id="proprietaire" placeholder="Nom du propriétaire" required><br>
+        <button type="submit">Ajouter l'examen</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+/* Basic reset and font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #e0eafc, #cfdef3);
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+    color: #333;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+}
+
+/* Inputs & Textarea */
+input, textarea, button {
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+input:hover, textarea:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+/* Button styling */
+button {
+    background-color: #4e9af1;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #2e80e0;
+}
+
+#propositions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Optional: style dynamically added inputs */
+#propositions input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Make the extra button consistent too */
+#add-proposition {
+    background-color: #6cbf4a;
+}
+
+#add-proposition:hover {
+    background-color: #56a839;
+}
+
+#form-liste {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#resultat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.exam-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.exam-card:hover {
+    transform: translateY(-3px);
+}
+
+.exam-card h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.exam-card ul {
+    padding-left: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+nav a {
+    text-decoration: none;
+    background-color: #4a90e2;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #357ab8;
+}
